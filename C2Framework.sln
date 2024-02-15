@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamServer", "TeamServer\TeamServer.csproj", "{B159A184-1A69-4ADA-B2F9-743C4107EE64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiModels", "ApiModels\ApiModels.csproj", "{E8656EC2-FB1F-4C6F-BC91-616454A4B109}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B159A184-1A69-4ADA-B2F9-743C4107EE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B159A184-1A69-4ADA-B2F9-743C4107EE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B159A184-1A69-4ADA-B2F9-743C4107EE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B159A184-1A69-4ADA-B2F9-743C4107EE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8656EC2-FB1F-4C6F-BC91-616454A4B109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8656EC2-FB1F-4C6F-BC91-616454A4B109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8656EC2-FB1F-4C6F-BC91-616454A4B109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8656EC2-FB1F-4C6F-BC91-616454A4B109}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B78B837E-A2D0-4A2D-A191-31B6CC892F66}
+	EndGlobalSection
+EndGlobal

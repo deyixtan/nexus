@@ -1,0 +1,6 @@
+C:\Users\deyi\source\repos\C2Framework\ApiModels\obj\Debug\ApiModels.csproj.AssemblyReference.cache
+C:\Users\deyi\source\repos\C2Framework\ApiModels\obj\Debug\ApiModels.csproj.CoreCompileInputs.cache
+C:\Users\deyi\source\repos\C2Framework\ApiModels\bin\Debug\ApiModels.dll
+C:\Users\deyi\source\repos\C2Framework\ApiModels\bin\Debug\ApiModels.pdb
+C:\Users\deyi\source\repos\C2Framework\ApiModels\obj\Debug\ApiModels.dll
+C:\Users\deyi\source\repos\C2Framework\ApiModels\obj\Debug\ApiModels.pdb

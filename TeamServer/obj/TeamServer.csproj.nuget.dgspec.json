@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\deyi\\source\\repos\\C2Framework\\TeamServer\\TeamServer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\deyi\\source\\repos\\C2Framework\\ApiModels\\ApiModels.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\deyi\\source\\repos\\C2Framework\\ApiModels\\ApiModels.csproj",
+        "projectName": "ApiModels",
+        "projectPath": "C:\\Users\\deyi\\source\\repos\\C2Framework\\ApiModels\\ApiModels.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\deyi\\source\\repos\\C2Framework\\TeamServer\\TeamServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\deyi\\source\\repos\\C2Framework\\TeamServer\\TeamServer.csproj",
+        "projectName": "TeamServer",
+        "projectPath": "C:\\Users\\deyi\\source\\repos\\C2Framework\\TeamServer\\TeamServer.csproj",
+        "packagesPath": "C:\\Users\\deyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\deyi\\source\\repos\\C2Framework\\TeamServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\deyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\deyi\\source\\repos\\C2Framework\\ApiModels\\ApiModels.csproj": {
+                "projectPath": "C:\\Users\\deyi\\source\\repos\\C2Framework\\ApiModels\\ApiModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
