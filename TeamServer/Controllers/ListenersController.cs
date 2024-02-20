@@ -10,11 +10,13 @@ namespace TeamServer.Controllers
     public class ListenersController : ControllerBase
     {
         private readonly IListenerService _listeners;
+        private readonly IAgentService _agentService;
 
         // dependency injection for IListenerService
-        public ListenersController(IListenerService listeners)
+        public ListenersController(IListenerService listeners, IAgentService agentService)
         {
             _listeners = listeners;
+            _agentService = agentService;
         }
 
         [HttpGet]
@@ -36,6 +38,7 @@ namespace TeamServer.Controllers
         public IActionResult StartListener([FromBody] StartHttpListenerRequest request)
         {
             var listener = new HttpListener(request.Name, request.BindPort);
+            listener.Init(_agentService);
             listener.Start();
 
             _listeners.AddListener(listener);

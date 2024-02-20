@@ -1,12 +1,10 @@
 ﻿
-using System.Diagnostics.Metrics;
-
 namespace TeamServer.Models
 {
     public class HttpListener : Listener
     {
         public override string Name { get; }
-        public override int BindPort { get; }
+        public int BindPort { get; }
 
         private CancellationTokenSource _tokenSource;
 
@@ -35,6 +33,9 @@ namespace TeamServer.Models
         private void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // AgentService inherited from Listener, DI to HttpListenerController
+            services.AddSingleton(AgentService);
         }
 
         private void ConfigureApp(IApplicationBuilder app)

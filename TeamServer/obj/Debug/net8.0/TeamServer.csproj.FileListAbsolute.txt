@@ -31,3 +31,6 @@ C:\Users\deyi\source\repos\C2Framework\TeamServer\obj\Debug\net8.0\TeamServer.ge
 C:\Users\deyi\source\repos\C2Framework\TeamServer\obj\Debug\net8.0\ref\TeamServer.dll
 C:\Users\deyi\source\repos\C2Framework\TeamServer\bin\Debug\net8.0\ApiModels.dll
 C:\Users\deyi\source\repos\C2Framework\TeamServer\bin\Debug\net8.0\ApiModels.pdb
+C:\Users\deyi\source\repos\C2Framework\TeamServer\obj\Debug\net8.0\TeamServer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\deyi\source\repos\C2Framework\TeamServer\obj\Debug\net8.0\TeamServer.sourcelink.json
+C:\Users\deyi\source\repos\C2Framework\TeamServer\bin\Debug\net8.0\Newtonsoft.Json.dll
