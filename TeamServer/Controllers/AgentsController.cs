@@ -24,7 +24,7 @@ namespace TeamServer.Controllers
         }
 
         [HttpGet("{agentId}")]
-        public IActionResult GetTaskResults(string agentId)
+        public IActionResult GetAgent(string agentId)
         {
             var agent = _agents.GetAgent(agentId);
             if (agent is null) return NotFound();
@@ -33,7 +33,7 @@ namespace TeamServer.Controllers
         }
 
         [HttpGet("{agentId}/tasks")]
-        public IActionResult GetTaskResult(string agentId)
+        public IActionResult GetTaskResults(string agentId)
         {
             var agent = _agents.GetAgent(agentId);
             if (agent is null) return NotFound("Agent not found");
@@ -43,7 +43,7 @@ namespace TeamServer.Controllers
         }
 
         [HttpGet("{agentId}/tasks/{taskId}")]
-        public IActionResult GetAgent(string agentId, string taskId)
+        public IActionResult GetTaskResult(string agentId, string taskId)
         {
             var agent = _agents.GetAgent(agentId);
             if (agent is null) return NotFound("Agent not found");

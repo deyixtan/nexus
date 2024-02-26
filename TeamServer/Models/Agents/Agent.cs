@@ -43,5 +43,10 @@ namespace TeamServer.Models
         {
             return _taskResults;
         }
+
+        public void AddTaskResults(IEnumerable<AgentTaskResult> results)
+        {
+            _taskResults.AddRange(results);
+        }
     }
 }

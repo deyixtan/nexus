@@ -9,10 +9,10 @@ namespace TeamServer.Controllers
     [Route("[controller]")]
     public class ListenersController : ControllerBase
     {
+        // dependency injections
         private readonly IListenerService _listeners;
         private readonly IAgentService _agentService;
 
-        // dependency injection for IListenerService
         public ListenersController(IListenerService listeners, IAgentService agentService)
         {
             _listeners = listeners;
