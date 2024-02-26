@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,6 +41,43 @@ namespace Agent.Internal
             process.BeginErrorReadLine();
 
             process.WaitForExit();
+            return output;
+        }
+
+        public static string ExecuteAssembly(byte[] asm, string[] arguments = null)
+        {
+            // executing assembly, output will be displayed at Console by default
+            
+            if (arguments is null)
+                arguments = new string[] { };
+
+            var currentOut = Console.Out;
+            var currentError = Console.Error;
+
+            var ms = new MemoryStream();
+            var sw = new StreamWriter(ms)
+            {
+                AutoFlush = true
+            };
+
+            Console.SetOut(sw);
+            Console.SetError(sw);
+
+            var assembly = Assembly.Load(asm);
+            assembly.EntryPoint.Invoke(null, new object[] { arguments });
+
+            // make sure any extra data in the buffer gets flushed out
+            Console.Out.Flush();
+            Console.Error.Flush();
+
+            var output = Encoding.UTF8.GetString(ms.ToArray());
+
+            Console.SetOut(currentOut);
+            Console.SetError(currentError);
+
+            sw.Dispose();
+            ms.Dispose();
+
             return output;
         }
     }
