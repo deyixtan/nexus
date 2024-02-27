@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36d16917e8eb8ec8ff1f7ec09e6d480270e1b989")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d978f0e540843375f6c3ca35747721925ee6fc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

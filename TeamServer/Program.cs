@@ -25,3 +25,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+// to make it visible to test projects
+// https://peterdaugaardrasmussen.com/2022/02/05/how-to-make-integration-tests-in-net-6-without-a-startup-cs-file/
+public partial class Program { }
